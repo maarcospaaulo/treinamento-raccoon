@@ -1,0 +1,165 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+}
+
+@font-face {
+    font-family: "AvenirHand";
+    src: url(/fonts/AvenirCondensedHand.ttf);
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+svg {
+    display: inline-block;
+    font-size: inherit;
+    height: 1em;
+    overflow: visible;
+    vertical-align: -.125em;
+}
+
+/* MENU */
+
+@font-face {
+    font-family: "AvenirHand";
+    src: url(/fonts/AvenirCondensedHand.ttf);
+}
+
+.menu-header {
+    width: 100%;
+    margin: 0;
+}
+
+/* Menu hamburguer responsivo */
+
+.toggle {
+    width: 100%;
+    padding: 20px 20px;
+    background-color: #fff;
+    font-size: 26px;
+    display: block;
+    position: relative;
+}
+
+.logo-menu {
+    display: flex;
+    /* Alinhamento horizontal */
+    justify-content: center;
+}
+
+.logo-menu img {
+    height: 65px;
+    width: auto;
+}
+
+/* Icone hamburguer */
+.menu {
+    color: #025193;
+    position: absolute;
+    top: 50%; /* alinhar ao centro do elemento superior */
+    transform: translateY(-50%); /* alinhar ao centro do elemento superior */
+    right: 20px;
+    padding: 5px;
+}
+
+/* UL */
+.menu-itens {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'AvenirHand';
+
+    /* Rolagem do menu quando se remove o .active*/
+    position: static;
+    overflow: hidden;
+    max-height: 0;
+    transition: all .4s;
+}
+
+/* menu inicia escondido */
+.active {
+    height: auto;
+    max-height: 800px;
+}
+
+.menu-itens .menu-item {
+    
+    display: flex;
+    /* Alinhamento horizontal */
+    justify-content: space-between;
+
+    /* Alinhamento vertical */
+    align-items: stretch;
+
+    /* Direção dos elementos */
+    flex-direction: row;
+
+    /* Quebra de Linha */
+    flex-wrap: wrap;
+}
+
+/* LI */
+.menu-item {
+    list-style: none;
+    display: block;
+    text-align: left;
+    padding-left: 35px;
+}
+
+.menu-item .menu-item-action {
+    color: #000;
+}
+
+.menu-item-action {
+    font-weight: bold;
+    flex: 80%;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 10px 0;
+}
+
+/* Para o "+" ao lado do menu-item-action */
+.menu-item .expand {
+    flex: 10%;
+    text-align: center;
+    border-left: 1px solid #c4c4c4;
+    color: #c4c4c4;
+    font-size: 20px;
+}
+
+/* UNIDADES EM VERMELHO */
+.menu-item .red {
+    flex: 0;
+    display: inline-block;
+    margin-top: 10px;
+    background-color: #ED1227;
+    color: #ffffff;
+    padding: 25px;
+}
+
+/* SUBMENU */
+
+/* UL UL */
+.submenu-itens { 
+    padding: 0;
+    position: static;
+    overflow: hidden;
+    max-height: 0;
+    transition: all .8s;
+}
+
+/* LI UL */
+.menu-item:hover .submenu-itens {
+    height: auto;
+    max-height: 300px;
+}
+
+.submenu-itens a {
+    padding-right: 150px;
+}
