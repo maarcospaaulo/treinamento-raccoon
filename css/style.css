@@ -1,0 +1,45 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+svg {
+    display: inline-block;
+    font-size: inherit;
+    height: 1em;
+    overflow: visible;
+    vertical-align: -.125em;
+}
+
+.top-header {
+    background-color: #025193;
+}
+
+/* REDES SOCIAIS */ 
+
+.social-media {
+    height: 40px;
+    display: flex;
+
+    /* Alinhamento horizontal */
+    justify-content: center;
+
+    /* Alinhamento vertical */
+    align-items: center;
+
+    /* Direção dos elementos */
+    flex-direction: row;
+}
+
+.social-media a {
+    color: #fff;
+    margin: 5px;
+}
