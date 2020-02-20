@@ -155,5 +155,5 @@ svg {
 /* LI UL */
 .menu-item:hover .submenu-itens {
     height: auto;
-    max-height: 9999px;
+    max-height: 999px;
 }
