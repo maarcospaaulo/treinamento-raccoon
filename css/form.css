@@ -32,9 +32,9 @@ svg {
 .forms {
     background-color: #025193;
     color: #fff;
-    padding: 20px;
+    padding: 20px 25px;
     text-align: center;
-    height: 450px;
+    height: 480px;
     width: 100%;
     font-family: "Segoe Regular";
 }
@@ -52,10 +52,16 @@ svg {
 
 .forms .form-input {
     width: 100%;
-    border: 0;
+    border: 2px solid #fff;
     border-radius: 20px;
     padding: 10px 20px;
     margin-bottom: 15px;
+    background-color: #025193;
+    color: #fff;
+}
+
+.forms .form-input::-webkit-input-placeholder {
+    color: #fff;
 }
 
 .forms .form-btn {
@@ -69,6 +75,4 @@ svg {
     margin-bottom: 15px;
     cursor: pointer;
     font-family: "Segoe Bold";
-    /*display: block;
-    margin: 0 auto;*/
 }
