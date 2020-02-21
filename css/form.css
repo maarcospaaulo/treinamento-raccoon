@@ -1,3 +1,32 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+svg {
+    display: inline-block;
+    font-size: inherit;
+    height: 1em;
+    overflow: visible;
+    vertical-align: -.125em;
+}
+
+@font-face {
+    font-family: "Segoe Regular";
+    src: url(../fonts/segoeui.ttf);
+}
+  
+@font-face {
+    font-family: "Segoe Bold";
+    src: url(../fonts/segoeuib.ttf);
+    font-weight: bold;
+}
+
 /* FORMULARIO */ 
 
 .forms {
@@ -31,4 +60,15 @@
 
 .forms .form-btn {
     border: none;
+    color: #fff;
+    background-color: #ED1227;
+    width: 100%;
+    border: 0;
+    border-radius: 20px;
+    padding: 10px 20px;
+    margin-bottom: 15px;
+    cursor: pointer;
+    font-family: "Segoe Bold";
+    /*display: block;
+    margin: 0 auto;*/
 }
