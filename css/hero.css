@@ -1,0 +1,34 @@
+@media (min-width: 768px) {
+    .hero {
+        display: flex;
+    }
+
+    .hero .banner {
+        min-width: 50%;
+        height: 500px;
+    }
+
+    .hero .banner h1 {
+        font-size: 3.5rem;
+        padding-top: 180px;
+    }
+
+    .hero .banner p {
+        font-size: 1.7rem;
+    }
+
+    /* FORMULARIO */ 
+
+    .hero .forms {
+        height: 500px;
+    }
+
+    .hero .forms .form-input {
+        max-width: 600px;
+        
+    }
+
+    .hero .forms .form-btn {
+        max-width: 600px;
+    }
+}
