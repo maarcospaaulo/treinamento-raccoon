@@ -48,6 +48,13 @@ html {
     border-right: 100px solid transparent;
 }
 
+.triangle-top-left img {
+    min-width: 60px;
+    min-height: auto;
+    position: absolute;
+    top: -90px;
+}
+
 .banner h1 {
     text-transform: uppercase;
     font-size: 2.5rem;
