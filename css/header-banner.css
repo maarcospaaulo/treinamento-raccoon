@@ -39,7 +39,7 @@ html {
     position: relative;
 }
 
-.triangle-top-left {
+.banner .triangle-top-left {
     position: absolute;
     top: 0;
     width: 0;
@@ -48,7 +48,7 @@ html {
     border-right: 100px solid transparent;
 }
 
-.triangle-top-left img {
+.banner .triangle-top-left img {
     min-width: 60px;
     min-height: auto;
     position: absolute;
