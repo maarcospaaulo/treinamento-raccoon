@@ -16,6 +16,10 @@ svg {
     vertical-align: -.125em;
 }
 
+html {
+    font-size: 12px;
+}
+
 @font-face {
     font-family: "Segoe Regular";
     src: url(../fonts/segoeui.ttf);
@@ -25,6 +29,11 @@ svg {
     font-family: "Segoe Bold";
     src: url(../fonts/segoeuib.ttf);
     font-weight: bold;
+}
+
+@font-face {
+    font-family: "Din Next Regular";
+    src: url(../fonts/DINNextSlabRegular.ttf);
 }
 
 /* FORMULARIO */ 
@@ -41,13 +50,14 @@ svg {
 
 .forms h2 {
     text-transform: uppercase;
-    font-family: "Segoe Bold";
+    font-family: "Din Next Regular";
+    font-size: 2rem;
 }
 
 .forms p {
     padding-top: 5px;
     padding-bottom: 15px;
-    font-size: 14px;
+    font-size: 1.2rem;
 }
 
 .forms .form-input {
