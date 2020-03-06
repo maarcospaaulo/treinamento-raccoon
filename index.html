@@ -27,12 +27,24 @@
                 <h2> Venha nos conhecer</h2>
                 <p>Traga seu filho para visitar a unidade mais próxima</p>
                 <form>
-                    <input class="form-input" type="email" name="email" id="email" placeholder="E-mail">
-                    <input class="form-input" type="text" name="nomeResp" id="nomeResp" placeholder="Nome do responsável">
-                    <input class="form-input" type="tel" name="celular" id="celular" placeholder="Celular">
-                    <input class="form-input" type="text" name="nome" id="nome" placeholder="Nome do aluno">
-                    <input class="form-input" type="text" name="nome" id="nome" placeholder="Data de nascimento do aluno">
-                    <input class="form-input" type="text" name="nome" id="nome" placeholder="Unidade">
+                    <label aria-label="email">
+                        <input class="form-input" type="email" name="email" id="email" placeholder="E-mail" required>
+                    </label>
+                    <label aria-label="nome do responsavel">
+                        <input class="form-input" type="text" name="nomeResp" id="nomeResp" placeholder="Nome do responsável" required>
+                    </label>
+                    <label aria-label="celular">
+                        <input class="form-input" type="tel" name="celular" id="celular" placeholder="Celular" required>
+                    </label>
+                    <label aria-label="nome do aluno">
+                        <input class="form-input" type="text" name="nomeAluno" id="nomeAluno" placeholder="Nome do aluno" required>
+                    </label>
+                    <label aria-label="Data de nascimento do aluno">
+                        <input class="form-input" type="text" name="dataNasc" id="dataNasc" placeholder="Data de nascimento do aluno" required>
+                    </label>
+                    <label aria-label="unidade">
+                        <input class="form-input" type="text" name="unidade" id="unidade" placeholder="Unidade" required>
+                    </label>
     
                     <input class="form-btn" type="submit" value="ENVIAR">
                 </form>

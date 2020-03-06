@@ -1,11 +1,15 @@
 @media (min-width: 768px) {
     .hero {
+        background-image: url(../img/banner.png);
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
         display: flex;
     }
 
     .hero .banner {
         min-width: 50%;
         height: 500px;
+        background: none;
     }
 
     .hero .banner h1 {
