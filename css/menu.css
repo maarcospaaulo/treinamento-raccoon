@@ -73,7 +73,6 @@ svg {
     font-family: 'AvenirHand';
 
     /* Rolagem do menu quando se remove o .active*/
-    position: static;
     overflow: hidden;
     max-height: 0;
     transition: all .4s;
@@ -81,11 +80,10 @@ svg {
 
 /* menu inicia escondido */
 .active {
-    height: auto;
-    max-height: 800px;
+    max-height: 999px;
 }
 
-.menu-itens .menu-item {
+.botton-header .menu-header .menu-itens > .menu-item {
     
     display: flex;
     /* Alinhamento horizontal */
@@ -101,6 +99,10 @@ svg {
     flex-wrap: wrap;
 }
 
+.botton-header .menu-header .menu-itens .menu-item .submenu-itens > .menu-item { 
+    padding-bottom: 20px;
+}
+
 /* LI */
 .menu-item {
     list-style: none;
@@ -109,20 +111,17 @@ svg {
     padding-left: 35px;
 }
 
-.menu-item .menu-item-action {
-    color: #000;
-}
-
-.menu-item-action {
+.botton-header .menu-header .menu-itens .menu-item > .menu-item-action {
     font-weight: bold;
     flex: 80%;
     text-decoration: none;
     text-transform: uppercase;
     padding: 10px 0;
+    color: #000
 }
 
 /* Para o "+" ao lado do menu-item-action */
-.menu-item .expand {
+.botton-header .menu-header .menu-itens .menu-item .expand {
     flex: 10%;
     text-align: center;
     border-left: 1px solid #c4c4c4;
@@ -131,7 +130,7 @@ svg {
 }
 
 /* UNIDADES EM VERMELHO */
-.menu-item .red {
+.botton-header .menu-header .menu-itens .menu-item .red {
     flex: 0;
     display: inline-block;
     margin-top: 10px;
@@ -143,7 +142,7 @@ svg {
 /* SUBMENU */
 
 /* UL UL */
-.submenu-itens { 
+.botton-header .menu-header .menu-itens .menu-item .submenu-itens { 
     padding: 0;
     position: static;
     overflow: hidden;
@@ -153,7 +152,82 @@ svg {
 }
 
 /* LI UL */
-.menu-item:hover .submenu-itens {
+.botton-header .menu-header .menu-itens .menu-item:hover .submenu-itens {
     height: auto;
     max-height: 999px;
+}
+
+@media (min-width: 768px) {
+
+    .botton-header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    /* IMG DO LOGO */
+    .botton-header .toggle {
+        width: auto;
+        padding: 0;
+    }
+
+    /* ESCONDER MENU HAMBURGUER */
+    .botton-header .toggle > .menu {
+        display: none;
+    }
+
+    .botton-header .menu-header {
+        width: auto;
+    }
+
+    /* TODOS OS ITENS DO MENU PRINCIPAL */
+    .botton-header > .menu-header > .menu-itens {
+        transition: none;
+        overflow: visible;
+    }
+
+    /* ITEM DO MENU PRINCIPAL */
+    .botton-header .menu-header > .menu-itens > .menu-item {
+        display: inline-block; /* lado a lado */
+        padding: 0;
+        position: relative;
+    }
+
+    /*  ITEM DO MENU PRINCIPAL > A */
+    .botton-header .menu-header > .menu-itens > .menu-item > .menu-item-action {
+        
+        padding: 20px 15px;
+    }
+    
+    /* REMOVER PADDING TOP/BOTTOM DE "UNIDADES" */
+    .botton-header .menu-header > .menu-itens > .menu-item:last-child {
+        padding: 0 15px;
+    }
+
+    .botton-header .menu-header > .menu-itens > .menu-item > .red {
+        margin: 0;
+    }
+
+    /* REMOVER SPAN "+" */
+    .botton-header .menu-header > .menu-itens > .menu-item > .expand {
+        display: none;
+    }
+
+    .botton-header .menu-header > .menu-itens > .menu-item > .submenu-itens { 
+        transition: none;
+        position: absolute;
+        min-width: 300px;
+    }
+
+    .botton-header .menu-header .menu-itens .menu-item:hover .submenu-itens > .menu-item {
+        padding: 15px;
+    }
+
+    .botton-header .menu-header .menu-itens .menu-item:hover .submenu-itens .menu-item:hover {
+        background-color: #ED1227;
+    }
+
+    .botton-header .menu-header .menu-itens .menu-item .submenu-itens .menu-item:hover .menu-item-action {
+        color: #fff;
+    }
 }
