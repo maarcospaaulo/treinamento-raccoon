@@ -26,32 +26,38 @@
             <div class="forms">
                 <h2> Venha nos conhecer</h2>
                 <p>Traga seu filho para visitar a unidade mais próxima</p>
-                <form>
+                <form name="form" id="form">
                     <label aria-label="email">
-                        <input class="form-input" type="email" name="email" id="email" placeholder="E-mail" required>
+                        <input class="form-input" type="email" name="email" id="email" placeholder="E-mail" required autocomplete="off">
+                        <span id="email-inv" class="invalid"></span>
                     </label>
                     <label aria-label="nome do responsavel">
-                        <input class="form-input" type="text" name="nomeResp" id="nomeResp" placeholder="Nome do responsável" required>
+                        <input class="form-input" type="text" name="nomeResp" id="nomeResp" placeholder="Nome do responsável" required autocomplete="off">
+                        <span id="nomeR-inv" class="invalid"></span>
                     </label>
                     <label aria-label="celular">
-                        <input class="form-input" type="tel" name="celular" id="celular" placeholder="Celular" required>
+                        <input class="form-input" type="tel" name="tel" id="tel" placeholder="Celular (00) 00000-0000" maxlength="13" minlength="12" OnKeyPress="formatar('##-#####-####', this)" required autocomplete="off">
+                        <span id="cel-inv" class="invalid"></span>
                     </label>
                     <label aria-label="nome do aluno">
-                        <input class="form-input" type="text" name="nomeAluno" id="nomeAluno" placeholder="Nome do aluno" required>
+                        <input class="form-input" type="text" name="nomeAluno" id="nomeAluno" placeholder="Nome do aluno" required autocomplete="off">
+                        <span id="nomeA-inv" class="invalid"></span>
                     </label>
                     <label aria-label="Data de nascimento do aluno">
-                        <input class="form-input" type="text" name="dataNasc" id="dataNasc" placeholder="Data de nascimento do aluno" required>
+                        <input class="form-input" type="text" name="nascimento" id="nascimento" placeholder="Data de nascimento do aluno" maxlength="10" minlength="10" OnKeyPress="formatar('##/##/####', this)" required autocomplete="off">
+                        <span id="data-inv" class="invalid"></span>
                     </label>
                     <label aria-label="unidade">
-                        <input class="form-input" type="text" name="unidade" id="unidade" placeholder="Unidade" required>
+                        <input class="form-input" type="text" name="unidade" id="unidade" placeholder="Unidade" required autocomplete="off">
                     </label>
                     <label aria-label="Enviar">
-                        <input class="form-btn" type="submit" value="ENVIAR">
+                        <input class="form-btn" id="enviar" type="submit" value="ENVIAR">
                     </label>
                 </form>
             </div>
         </div>
     </main>
+    <script src="/js/forms.js"></script>
 </body>
 
 </html>

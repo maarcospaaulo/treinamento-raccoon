@@ -42,22 +42,24 @@ html {
     background-color: #025193;
     color: #fff;
     padding: 20px 25px;
-    text-align: center;
-    height: 480px;
+    height: 490px;
     width: 100%;
     font-family: "Segoe Regular";
+    text-align: center;
 }
 
 .forms h2 {
     text-transform: uppercase;
     font-family: "Din Next Regular";
     font-size: 2rem;
+    text-align: center;
 }
 
 .forms p {
     padding-top: 5px;
     padding-bottom: 15px;
     font-size: 1.2rem;
+    text-align: center;
 }
 
 .forms .form-input {
@@ -65,13 +67,20 @@ html {
     border: 2px solid #fff;
     border-radius: 20px;
     padding: 10px 20px;
-    margin-bottom: 15px;
+    margin-top: 15px;
     background-color: #025193;
     color: #fff;
 }
 
 .forms .form-input::-webkit-input-placeholder {
     color: #fff;
+}
+
+/* CAMPOS INVALIDOS */
+.forms .invalid {
+    color: lightcoral;
+    padding: 2px;
+    display: none;
 }
 
 .forms .form-btn {
@@ -82,7 +91,8 @@ html {
     border: 0;
     border-radius: 20px;
     padding: 10px 20px;
-    margin-bottom: 15px;
+    margin-top: 15px;
+    margin-bottom: 5px;
     cursor: pointer;
     font-family: "Segoe Bold";
 }
