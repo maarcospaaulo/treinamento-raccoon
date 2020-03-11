@@ -29,11 +29,10 @@ body {
     text-align: center;
 }
 
-.previous-slide {
-	position: absolute;
-	top: 50%;
-    display: inline;
-    left: -50px;
+.previous-slide > svg {
+    background-color: lawngreen;
+    display: inline-block;
+    padding: 10px;
 }
 
 @media (min-width: 768px) {
