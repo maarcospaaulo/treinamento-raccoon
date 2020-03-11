@@ -1,0 +1,45 @@
+body {
+    background-color: #4099E6;
+}
+  
+/*.carousel {
+    width: 200px;
+    margin: 0 auto;
+}*/
+
+.stage {
+    width: 300px;
+    margin: 0 auto;
+}
+
+.stage h2 {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.stage .carousel-stage .circle {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: #EF323D;
+    margin: 0 auto;
+}
+
+.stage .carousel-stage p {
+    text-align: center;
+}
+
+.previous-slide {
+	position: absolute;
+	top: 50%;
+    display: inline;
+    left: -50px;
+}
+
+@media (min-width: 768px) {
+    .stage {
+        width: 800px;
+        margin: 0 auto;
+        text-align: center;
+    }
+}
