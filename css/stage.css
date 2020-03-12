@@ -11,6 +11,9 @@
 .stage h2 {
     text-align: center;
     text-transform: uppercase;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    color: #025294;
 }
 
 .stage .carousel-stage .circle {
@@ -32,6 +35,8 @@
 
 .stage .carousel-stage p {
     text-align: center;
+    color: #025294;
+    font-weight: bold;
 }
 
 .previous-slide > svg {
@@ -39,6 +44,7 @@
     position: absolute;
     bottom: 100px;
     z-index: 1;
+    fill: #025294;
 }
 
 .next-slide > svg {
@@ -46,6 +52,7 @@
     position: relative;
     float: right;
     top: -150px;
+    fill: #025294;
 }
 
 @media (min-width: 768px) {
