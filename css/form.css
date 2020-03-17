@@ -1,0 +1,98 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+svg {
+    display: inline-block;
+    font-size: inherit;
+    height: 1em;
+    overflow: visible;
+    vertical-align: -.125em;
+}
+
+html {
+    font-size: 12px;
+}
+
+@font-face {
+    font-family: "Segoe Regular";
+    src: url(../fonts/segoeui.ttf);
+}
+  
+@font-face {
+    font-family: "Segoe Bold";
+    src: url(../fonts/segoeuib.ttf);
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: "Din Next Regular";
+    src: url(../fonts/DINNextSlabRegular.ttf);
+}
+
+/* FORMULARIO */ 
+
+.forms {
+    background-color: #025193;
+    color: #fff;
+    padding: 20px 25px;
+    height: 490px;
+    width: 100%;
+    font-family: "Segoe Regular";
+    text-align: center;
+}
+
+.forms h2 {
+    text-transform: uppercase;
+    font-family: "Din Next Regular";
+    font-size: 2rem;
+    text-align: center;
+}
+
+.forms p {
+    padding-top: 5px;
+    padding-bottom: 15px;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.forms .form-input {
+    width: 100%;
+    border: 2px solid #fff;
+    border-radius: 20px;
+    padding: 10px 20px;
+    margin-top: 15px;
+    background-color: #025193;
+    color: #fff;
+}
+
+.forms .form-input::-webkit-input-placeholder {
+    color: #fff;
+}
+
+/* CAMPOS INVALIDOS */
+.forms .invalid {
+    color: lightcoral;
+    padding: 2px;
+    display: none;
+}
+
+.forms .form-btn {
+    border: none;
+    color: #fff;
+    background-color: #ED1227;
+    width: 100%;
+    border: 0;
+    border-radius: 20px;
+    padding: 10px 20px;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    cursor: pointer;
+    font-family: "Segoe Bold";
+}
