@@ -6,7 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Treinamento</title>
 
-
+    <link rel="stylesheet" href="css/form.css">
+    <link rel="stylesheet" href="css/header-banner.css">
+    <link rel="stylesheet" href="css/hero.css">
     <!-- CSS MENU -->
     <link rel="stylesheet" href="css/menu.css">
     <!-- JQUERY -->
@@ -14,8 +16,9 @@
     <!-- CSS FOOTER -->
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/style.css">
-</head>
 
+</head>
+  
 <body>
     <header>
         <div class="top-header">
@@ -114,6 +117,49 @@
             </nav>
         </div>
       </header>
+      <main>
+        <div class="hero">
+            <div class="banner">
+                <div class="triangle-top-left">
+                    <img src="img/REDBALLOON-REDS_LOGO_BANNER.png" alt="Logo">
+                </div>
+                <h1>Red Balloon</h1>
+                <p>Inglês divertido levado a sério</p>
+            </div>
+            <div class="forms">
+                <h2> Venha nos conhecer</h2>
+                <p>Traga seu filho para visitar a unidade mais próxima</p>
+                <form name="form" id="form">
+                    <label aria-label="email">
+                        <input class="form-input" type="email" name="email" id="email" placeholder="E-mail" required autocomplete="off">
+                        <span id="email-inv" class="invalid"></span>
+                    </label>
+                    <label aria-label="nome do responsavel">
+                        <input class="form-input" type="text" name="nomeResp" id="nomeResp" placeholder="Nome do responsável" required autocomplete="off">
+                        <span id="nomeR-inv" class="invalid"></span>
+                    </label>
+                    <label aria-label="celular">
+                        <input class="form-input" type="tel" name="tel" id="tel" placeholder="Celular (00) 00000-0000" maxlength="13" minlength="12" OnKeyPress="formatar('##-#####-####', this)" required autocomplete="off">
+                        <span id="cel-inv" class="invalid"></span>
+                    </label>
+                    <label aria-label="nome do aluno">
+                        <input class="form-input" type="text" name="nomeAluno" id="nomeAluno" placeholder="Nome do aluno" required autocomplete="off">
+                        <span id="nomeA-inv" class="invalid"></span>
+                    </label>
+                    <label aria-label="Data de nascimento do aluno">
+                        <input class="form-input" type="text" name="nascimento" id="nascimento" placeholder="Data de nascimento do aluno" maxlength="10" minlength="10" OnKeyPress="formatar('##/##/####', this)" required autocomplete="off">
+                        <span id="data-inv" class="invalid"></span>
+                    </label>
+                    <label aria-label="unidade">
+                        <input class="form-input" type="text" name="unidade" id="unidade" placeholder="Unidade" required autocomplete="off">
+                    </label>
+                    <label aria-label="Enviar">
+                        <input class="form-btn" id="enviar" type="submit" value="ENVIAR">
+                    </label>
+                </form>
+            </div>
+        </div>
+    </main>
         <!--FIM MENU -->
     <!-- Inicio Rodapé -->
     <footer>
@@ -146,7 +192,7 @@
             </a>
         </div>
         <script src="js/menu.js"></script>
+        <script src="/js/forms.js"></script>
     </footer>
 </body>
-
 </html>
