@@ -6,6 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Treinamento</title>
 
+
+    <!-- CSS MENU -->
+    <link rel="stylesheet" href="css/menu.css">
+    <!-- JQUERY -->
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
     <!-- CSS FOOTER -->
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/style.css">
@@ -49,9 +54,67 @@
                 </a>
             </div>
             <!-- FIM REDES SOCIAIS -->
+            <div class="links-desk">
+                <a href="#">Área do Aluno</a>
+                <a href="#">Digiworld</a>
+            </div>
         </div>
-    </header>
-    
+        <div class="botton-header">
+            <!-- INICIO MENU HAMBURGUER -->
+            <div class="toggle">
+                <div class="logo-menu">
+                    <img src="img/REDBALLOON-REDS_LOGO_HOME-1.png" alt="logo redballon">
+                </div>
+                <a href="#" class="menu">
+                    <svg viewBox="0 0 448 512">
+                        <path fill="currentColor"
+                            d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z">
+                        </path>
+                    </svg>
+                </a>
+            </div>
+            <!-- FIM MENU HAMBURGUER -->
+            <!-- INICIO MENU -->
+            <nav class="menu-header">
+                <ul class="menu-itens active">
+                    <li class="menu-item">
+                        <a class="menu-item-action" href="#">Inicio</a>
+                        <span class="menu-item-action expand" href="#">+</span>
+                        <ul class="submenu-itens">
+                            <li class="menu-item">
+                                <a class="menu-item-action" href="#">Item 1</a>
+                            </li>
+                            <li class="menu-item">
+                                <a class="menu-item-action" href="#">Item 2</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="menu-item">
+                        <a class="menu-item-action" href="#">Cursos e Programas</a>
+                        <span class="menu-item-action expand" href="#">+</span>
+                        <ul class="submenu-itens">
+                            <li class="menu-item">
+                                <a class="menu-item-action" href="#">Curso 1</a>
+                            </li>
+                            <li class="menu-item">
+                                <a class="menu-item-action" href="#">Curso 2</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="menu-item">
+                        <a class="menu-item-action" href="#">Eventos</a>
+                    </li>
+                    <li class="menu-item">
+                        <a class="menu-item-action" href="#">Blog</a>
+                    </li>
+                    <li class="menu-item">
+                        <a class="menu-item-action red" href="#">Unidades</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+      </header>
+        <!--FIM MENU -->
     <!-- Inicio Rodapé -->
     <footer>
         <div class="triangulo-rodape" >
@@ -82,6 +145,7 @@
                 </svg>
             </a>
         </div>
+        <script src="js/menu.js"></script>
     </footer>
 </body>
 
