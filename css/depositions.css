@@ -15,9 +15,8 @@
 }
 
 .depositions {
-    width: 100%;
-    height: 450px;
-    color: #025294;
+    width: 300px;
+    margin: 0 auto;
 }
 
 .depositions h2 {
@@ -37,7 +36,7 @@
 .depositions .depositions-item {
     padding: 25px;
     border: solid 2px #025294;
-    margin: 20px 40px;
+    margin: 20px 0px;
     border-radius: 20px;
     height: 180px;
     max-width: 300px;
