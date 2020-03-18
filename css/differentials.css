@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+svg {
+    display: inline-block;
+    font-size: inherit;
+    height: 1em;
+    overflow: visible;
+    vertical-align: -.125em;
+}
+
+@font-face {
+    font-family: "Segoe Regular";
+    src: url(../fonts/segoeui.ttf);
+}
+  
+@font-face {
+    font-family: "Segoe Bold";
+    src: url(../fonts/segoeuib.ttf);
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: "Din Next Regular";
+    src: url(../fonts/DINNextSlabRegular.ttf);
+}
+
+.differentials {
+    width: 100%;
+    height: 450px;
+    background-color: #025294;
+}
+
+.differentials h2 {
+    text-align: center;
+    text-transform: uppercase;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    color: #fff;
+    font-family: "Din Next Regular";
+}
+
+.carousel-differentials {
+    width: 300px;
+    margin: 0 auto;
+}
+
+.carousel-differentials h3 {
+    text-align: center;
+    text-transform: uppercase;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    color: #fff;
+    font-family: "Din Next Regular";
+}
+
+.differentials .carousel-differentials svg {
+    height: 5em;
+    width: auto;
+    display: block;
+    margin: auto;
+    fill: #fff;
+}
+
+.differentials .carousel-differentials p {
+    text-align: center;
+    color: #fff;
+    font-family: "Segoe Regular";
+    padding-top: 10px;
+}
+
+.next-slide > svg {
+    padding: 10px;
+    position: relative;
+    float: right;
+    /*top: -100px;*/
+    bottom: 220px;
+    left: 50px;
+    fill: #fff;
+    height: 4em;
+    width: auto;
+}
+
+@media (min-width: 768px) {
+
+    .differentials {
+        height: 550px;
+    }
+
+    .carousel-differentials {
+        width: 1200px;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .differentials h2 {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    .slick-slide {
+        padding: 0 20px;
+    }
+}
