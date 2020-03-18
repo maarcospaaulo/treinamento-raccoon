@@ -91,7 +91,7 @@ svg {
     position: relative;
     float: right;
     /*top: -100px;*/
-    bottom: 140px;
+    bottom: 180px;
     fill: #025294;
     height: 5rem;
     width: auto;
@@ -108,7 +108,7 @@ svg {
         display: inline-block;
         position: absolute;
         padding-left: 75px;
-        bottom: 95px;
+        bottom: 140px;
         fill: #025294;
     }
 
