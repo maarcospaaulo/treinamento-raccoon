@@ -68,6 +68,8 @@ svg {
     color: #025294;
     font-family: "Segoe Bold";
     padding-top: 10px;
+    padding-bottom: 30px;
+    font-size: 1.2rem;
 }
 
 .stage .carousel-stage .next {
@@ -84,20 +86,21 @@ svg {
     width: auto;
 }*/
 
-.next-slide > svg {
+.stage .carousel-stage .next-slide > svg {
     padding: 10px;
     position: relative;
     float: right;
     /*top: -100px;*/
-    bottom: 140px;
+    bottom: 160px;
     fill: #025294;
-    height: 4em;
+    height: 5em;
     width: auto;
 }
 
 @media (min-width: 768px) {
+
     .stage {
-        width: 1000px;
+        width: auto;
         margin: 0 auto;
         text-align: center;
     }
@@ -106,12 +109,12 @@ svg {
         display: inline-block;
         position: absolute;
         padding-left: 100px;
-        bottom: 80px;
+        bottom: 120px;
         fill: #025294;
     }
 
     .stage .carousel-stage .next > svg {
-        height: 3em;
+        height: 5em;
         width: auto;
     }
 }
