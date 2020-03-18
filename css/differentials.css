@@ -1,21 +1,3 @@
-* {
-    margin: 0;
-    box-sizing: border-box;
-}
-
-img {
-    max-width: 100%;
-    height: auto;
-}
-
-svg {
-    display: inline-block;
-    font-size: inherit;
-    height: 1em;
-    overflow: visible;
-    vertical-align: -.125em;
-}
-
 @font-face {
     font-family: "Segoe Regular";
     src: url(../fonts/segoeui.ttf);
@@ -32,27 +14,16 @@ svg {
     src: url(../fonts/DINNextSlabRegular.ttf);
 }
 
-.differentials {
-    width: 100%;
-    height: 350px;
+.container {
     background-color: #025294;
 }
 
-.differentials h2 {
-    text-align: center;
-    text-transform: uppercase;
-    padding-top: 30px;
-    padding-bottom: 30px;
-    color: #fff;
-    font-family: "Din Next Regular";
-}
-
-.carousel-differentials {
+.container .differentials {
     width: 300px;
     margin: 0 auto;
 }
 
-.carousel-differentials h3 {
+.container .differentials h2 {
     text-align: center;
     text-transform: uppercase;
     padding-top: 30px;
@@ -61,7 +32,16 @@ svg {
     font-family: "Din Next Regular";
 }
 
-.differentials .carousel-differentials svg {
+.container .differentials .carousel-differentials h3 {
+    text-align: center;
+    text-transform: uppercase;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    color: #fff;
+    font-family: "Din Next Regular";
+}
+
+.container .differentials .carousel-differentials svg {
     height: 5em;
     width: auto;
     display: block;
@@ -69,14 +49,15 @@ svg {
     fill: #fff;
 }
 
-.differentials .carousel-differentials p {
+.container .differentials .carousel-differentials p {
     text-align: center;
     color: #fff;
     font-family: "Segoe Regular";
     padding-top: 10px;
+    margin-bottom: 40px;
 }
 
-.differentials .carousel-differentials .next-slide > svg {
+.container .differentials .carousel-differentials .next-slide > svg {
     padding: 10px;
     position: relative;
     float: right;
@@ -90,23 +71,25 @@ svg {
 
 @media (min-width: 768px) {
 
-    .differentials {
-        height: 450px;
-    }
-
-    .carousel-differentials {
-        width: 1200px;
+    .container .differentials {
+        min-width: 768px;
         margin: 0 auto;
         text-align: center;
     }
 
-    .differentials h2 {
+    .container .differentials h2 {
         padding-top: 50px;
         padding-bottom: 50px;
         text-align: center;
     }
 
-    .slick-slide {
+    .container .differentials .carousel-differentials .slick-slide {
         padding: 0 20px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .container .differentials {
+        min-width: 1024px;
     }
 }
