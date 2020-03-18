@@ -20,7 +20,7 @@
     color: #025294;
 }
 
-.depositions h2 {
+.depositions .titulo {
     text-align: center;
     text-transform: uppercase;
     padding-top: 50px;
@@ -77,8 +77,6 @@
  @media (min-width: 768px) {
     .depositions {
         min-width: 768px;
-        margin: 0 auto;
-        text-align: center;
     }
 
     .depositions .depositions-itens {
@@ -88,5 +86,6 @@
 
     .depositions .depositions-item {
         max-width: 350px;
+        margin: 0 20px;
     }   
  }
