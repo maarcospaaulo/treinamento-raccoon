@@ -34,7 +34,7 @@ svg {
 
 .differentials {
     width: 100%;
-    height: 450px;
+    height: 350px;
     background-color: #025294;
 }
 
@@ -76,15 +76,15 @@ svg {
     padding-top: 10px;
 }
 
-.next-slide > svg {
+.differentials .carousel-differentials .next-slide > svg {
     padding: 10px;
     position: relative;
     float: right;
     /*top: -100px;*/
-    bottom: 220px;
-    left: 50px;
+    bottom: 180px;
+    left: 20px;
     fill: #fff;
-    height: 4em;
+    height: 5em;
     width: auto;
 }
 
@@ -103,6 +103,7 @@ svg {
     .differentials h2 {
         padding-top: 50px;
         padding-bottom: 50px;
+        text-align: center;
     }
 
     .slick-slide {
