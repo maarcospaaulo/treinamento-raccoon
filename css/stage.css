@@ -56,7 +56,7 @@ svg {
 }
 
 .stage .carousel-stage .circle > svg {
-    height: 5em;
+    height: 5rem;
     width: auto;
     display: block;
     margin: auto;
@@ -68,6 +68,8 @@ svg {
     color: #025294;
     font-family: "Segoe Bold";
     padding-top: 10px;
+    margin-bottom: 40px;
+    font-size: 1.2rem;
 }
 
 .stage .carousel-stage .next {
@@ -84,20 +86,20 @@ svg {
     width: auto;
 }*/
 
-.next-slide > svg {
+.stage .carousel-stage .next-slide > svg {
     padding: 10px;
     position: relative;
     float: right;
     /*top: -100px;*/
     bottom: 140px;
     fill: #025294;
-    height: 4em;
+    height: 5rem;
     width: auto;
 }
 
 @media (min-width: 768px) {
     .stage {
-        width: 1000px;
+        min-width: 768px;
         margin: 0 auto;
         text-align: center;
     }
@@ -105,13 +107,27 @@ svg {
     .stage .carousel-stage .next {
         display: inline-block;
         position: absolute;
-        padding-left: 100px;
-        bottom: 80px;
+        padding-left: 75px;
+        bottom: 95px;
         fill: #025294;
     }
 
     .stage .carousel-stage .next > svg {
-        height: 3em;
-        width: auto;
+        height: 4rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    .stage {
+        min-width: 1024px;
+    }
+
+    .stage .carousel-stage .next {
+        padding-left: 100px;
+        bottom: 100px;
+    }
+
+    .stage .carousel-stage .next > svg {
+        height: 5rem;
     }
 }
