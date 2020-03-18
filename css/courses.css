@@ -1,0 +1,136 @@
+@font-face {
+    font-family: "Segoe Regular";
+    src: url(../fonts/segoeui.ttf);
+}
+  
+@font-face {
+    font-family: "Segoe Bold";
+    src: url(../fonts/segoeuib.ttf);
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: "Din Next Regular";
+    src: url(../fonts/DINNextSlabRegular.ttf);
+}
+
+.courses {
+    width: 300px;
+    margin: 0 auto;
+}
+
+.courses h2 {
+    text-align: center;
+    text-transform: uppercase;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    color: #025294;
+    font-family: "Din Next Regular";
+}
+
+.courses .carousel-courses .kids {
+    background-image: linear-gradient(
+        rgba(0,0,0,.6),rgba(0,0,0,.3)
+      ), url(/img/kids.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.courses .carousel-courses .juniors {
+    background-image: linear-gradient(
+        rgba(0,0,0,.6),rgba(0,0,0,.3)
+      ), url(/img/juniors.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.courses .carousel-courses .teens {
+    background-image: linear-gradient(
+        rgba(0,0,0,.6),rgba(0,0,0,.3)
+      ), url(/img/teens.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.courses .carousel-courses h3 {
+    text-align: left;
+    text-transform: uppercase;
+    padding-top: 20px;
+    padding-bottom: 15px;
+    color: #fff;
+    font-family: "Din Next Regular";
+    font-size: 2rem;
+}
+
+.courses .carousel-courses h4 {
+    text-align: left;
+    text-transform: uppercase;
+    padding-bottom: 80px;
+    color: #fff;
+    font-family: "Din Next Regular";
+    font-size: 1.2rem;
+}
+
+.courses .carousel-courses p {
+    text-align: left;
+    color: #fff;
+    font-family: "Segoe Regular";
+    padding-top: 10px;
+    z-index: 10;
+    font-size: 1.2rem;
+}
+
+.courses .carousel-courses .next-slide > svg {
+    padding: 10px;
+    position: relative;
+    float: right;
+    /*top: -100px;*/
+    bottom: 190px;
+    left: 35px;
+    fill: #025294;
+    height: 5rem;
+    width: auto;
+}
+
+.courses .carousel-courses .slick-slide {
+    padding: 0 20px;
+    margin: 0 10px;
+    border-radius: 20px;
+    height: 300px;
+}
+
+@media (min-width: 768px) {
+
+    .courses {
+        min-width: 768px;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .courses h2 {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    .courses .carousel-courses .slick-list {
+        margin: 0 30px;
+    }
+
+    .courses .carousel-courses .slick-slide {
+        padding: 0 20px;
+        margin: 0 10px;
+        border-radius: 20px;
+        height: 300px;
+    }
+}
+
+
+@media (min-width: 1024px) {
+    .courses {
+        min-width: 1024px;
+    }
+
+    .courses .carousel-courses .slick-slide {
+        margin: 0 20px;
+    }
+}
