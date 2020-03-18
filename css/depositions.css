@@ -17,6 +17,7 @@
 .depositions {
     width: 300px;
     margin: 0 auto;
+    color: #025294;
 }
 
 .depositions h2 {
@@ -36,7 +37,7 @@
 .depositions .depositions-item {
     padding: 25px;
     border: solid 2px #025294;
-    margin: 20px 0px;
+    margin-bottom: 20px;
     border-radius: 20px;
     height: 180px;
     max-width: 300px;
@@ -74,6 +75,12 @@
  }
 
  @media (min-width: 768px) {
+    .depositions {
+        min-width: 768px;
+        margin: 0 auto;
+        text-align: center;
+    }
+
     .depositions .depositions-itens {
         flex-direction: row;
         justify-content: center;
