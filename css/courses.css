@@ -15,8 +15,8 @@
 }
 
 .courses {
-    width: 100%;
-    height: 450px;
+    width: 300px;
+    margin: 0 auto;
 }
 
 .courses h2 {
@@ -28,12 +28,7 @@
     font-family: "Din Next Regular";
 }
 
-.carousel-courses {
-    width: 300px;
-    margin: 0 auto;
-}
-
-.kids {
+.courses .carousel-courses .kids {
     background-image: linear-gradient(
         rgba(0,0,0,.6),rgba(0,0,0,.3)
       ), url(/img/kids.jpg);
@@ -41,7 +36,7 @@
     background-size: cover;
 }
 
-.juniors {
+.courses .carousel-courses .juniors {
     background-image: linear-gradient(
         rgba(0,0,0,.6),rgba(0,0,0,.3)
       ), url(/img/juniors.png);
@@ -49,7 +44,7 @@
     background-size: cover;
 }
 
-.teens {
+.courses .carousel-courses .teens {
     background-image: linear-gradient(
         rgba(0,0,0,.6),rgba(0,0,0,.3)
       ), url(/img/teens.jpg);
@@ -57,7 +52,7 @@
     background-size: cover;
 }
 
-.carousel-courses h3 {
+.courses .carousel-courses h3 {
     text-align: left;
     text-transform: uppercase;
     padding-top: 20px;
@@ -67,7 +62,7 @@
     font-size: 2rem;
 }
 
-.carousel-courses h4 {
+.courses .carousel-courses h4 {
     text-align: left;
     text-transform: uppercase;
     padding-bottom: 80px;
@@ -85,7 +80,7 @@
     font-size: 1.2rem;
 }
 
-.next-slide > svg {
+.courses .carousel-courses .next-slide > svg {
     padding: 10px;
     position: relative;
     float: right;
@@ -93,11 +88,11 @@
     bottom: 190px;
     left: 35px;
     fill: #025294;
-    height: 4em;
+    height: 5rem;
     width: auto;
 }
 
-.slick-slide {
+.courses .carousel-courses .slick-slide {
     padding: 0 20px;
     margin: 0 10px;
     border-radius: 20px;
@@ -107,11 +102,7 @@
 @media (min-width: 768px) {
 
     .courses {
-        height: 550px;
-    }
-
-    .carousel-courses {
-        width: 1200px;
+        min-width: 768px;
         margin: 0 auto;
         text-align: center;
     }
@@ -121,14 +112,25 @@
         padding-bottom: 50px;
     }
 
-    .slick-list {
+    .courses .carousel-courses .slick-list {
         margin: 0 30px;
     }
 
-    .slick-slide {
+    .courses .carousel-courses .slick-slide {
         padding: 0 20px;
         margin: 0 10px;
         border-radius: 20px;
         height: 300px;
+    }
+}
+
+
+@media (min-width: 1024px) {
+    .courses {
+        min-width: 1024px;
+    }
+
+    .courses .carousel-courses .slick-slide {
+        margin: 0 20px;
     }
 }
