@@ -14,16 +14,17 @@
     src: url(../fonts/DINNextSlabRegular.ttf);
 }
 
-.container {
+.differentials {
     background-color: #025294;
+    width: 100%;
 }
 
-.container .differentials {
-    width: 100%;
+.differentials .container {
+    width: 300px;
     margin: 0 auto;
 }
 
-.container .differentials h2 {
+.differentials .container h2 {
     text-align: center;
     text-transform: uppercase;
     padding-top: 30px;
@@ -32,7 +33,7 @@
     font-family: "Din Next Regular";
 }
 
-.container .differentials .carousel-differentials h3 {
+.differentials .container .carousel-differentials h3 {
     text-align: center;
     text-transform: uppercase;
     padding-top: 30px;
@@ -41,7 +42,7 @@
     font-family: "Din Next Regular";
 }
 
-.container .differentials .carousel-differentials svg {
+.differentials .container .carousel-differentials svg {
     height: 5em;
     width: auto;
     display: block;
@@ -49,7 +50,7 @@
     fill: #fff;
 }
 
-.container .differentials .carousel-differentials p {
+.differentials .container .carousel-differentials p {
     text-align: center;
     color: #fff;
     font-family: "Segoe Regular";
@@ -57,7 +58,7 @@
     margin-bottom: 40px;
 }
 
-.container .differentials .carousel-differentials .next-slide > svg {
+.differentials .container .carousel-differentials .next-slide > svg {
     padding: 10px;
     position: relative;
     float: right;
@@ -71,25 +72,25 @@
 
 @media (min-width: 768px) {
 
-    .container .differentials {
+    .differentials .container {
         min-width: 768px;
         margin: 0 auto;
         text-align: center;
     }
 
-    .container .differentials h2 {
+    .differentials .container h2 {
         padding-top: 50px;
         padding-bottom: 50px;
         text-align: center;
     }
 
-    .container .differentials .carousel-differentials .slick-slide {
+    .differentials .container .carousel-differentials .slick-slide {
         padding: 0 20px;
     }
 }
 
 @media (min-width: 1024px) {
-    .container .differentials {
+    .differentials .container {
         min-width: 1024px;
     }
 }
